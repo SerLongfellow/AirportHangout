@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Airport Hangout</string>
+    <string name="default_location">Unknown, USA</string>
+    <string name="default_occupation">Dr. Feelgood</string>
+</resources>
