@@ -3,6 +3,7 @@ package com.serlongfellow.android.airporthangout
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import com.serlongfellow.android.airporthangout.providers.impl.SimpleCandidateListProvider
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     fun setupRecycler() {
         linearLayoutManager = LinearLayoutManager(this)
-        candidateListAdapter = CandidateListAdapter()
+        candidateListAdapter = CandidateListAdapter(SimpleCandidateListProvider())
 
         candidateRecyclerView.apply {
             layoutManager = linearLayoutManager

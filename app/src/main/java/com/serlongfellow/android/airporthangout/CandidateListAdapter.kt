@@ -3,16 +3,12 @@ package com.serlongfellow.android.airporthangout
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.serlongfellow.android.airporthangout.domain.CandidateModel
 
-class CandidateListAdapter : RecyclerView.Adapter<CandidateLineViewHolder>() {
+import com.serlongfellow.android.airporthangout.providers.CandidateListProvider
 
-    private var candidates = mutableListOf<CandidateModel>()
+class CandidateListAdapter(candidateListProvider: CandidateListProvider) : RecyclerView.Adapter<CandidateLineViewHolder>() {
 
-    init {
-        candidates.add(CandidateModel("Little Rock, AR, USA", "Corn Husker"))
-        candidates.add(CandidateModel("Seattle, WA, USA", "Rehabilitation Therapist"))
-    }
+    private var candidates = candidateListProvider.fetchCandidateList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CandidateLineViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -27,6 +23,7 @@ class CandidateListAdapter : RecyclerView.Adapter<CandidateLineViewHolder>() {
 
     override fun onBindViewHolder(holder: CandidateLineViewHolder, position: Int) {
         val candidate = candidates[position]
+        holder.profilePictureImageView.setImageBitmap(candidate.profileImage)
         holder.occupationLabel.text = candidate.occupation
         holder.originLocationLabel.text = candidate.originLocation
     }
