@@ -13,10 +13,10 @@ class SimpleCandidateListProvider : CandidateListProvider {
 
     init {
         var profilePhoto = BitmapFactory.decodeResource(BaseApplication.instance.resources, R.drawable.arkansas_candidate)
-        candidates.add(CandidateModel("Little Rock, AR, USA", "Methamphetamine Connoisseur", profilePhoto))
+        candidates.add(CandidateModel("Bubba J.", "Little Rock, AR, USA", "Methamphetamine Connoisseur", profilePhoto))
 
         profilePhoto = BitmapFactory.decodeResource(BaseApplication.instance.resources, R.drawable.seattle_candidate)
-        candidates.add(CandidateModel("Seattle, WA, USA", "Rehabilitation Therapist", profilePhoto))
+        candidates.add(CandidateModel("Kurt C.", "Seattle, WA, USA", "Rehabilitation Therapist", profilePhoto))
     }
 
     override fun fetchCandidateList(): List<CandidateModel> {

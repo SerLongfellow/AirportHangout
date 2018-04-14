@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.meetup_candidates_line_view.view.*
 class CandidateLineViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     val profilePictureImageView : ImageView = itemView.profilePictureImageView
+    val nameLabel : TextView = itemView.nameLabel
     val originLocationLabel : TextView = itemView.originLocationLabel
     val occupationLabel : TextView = itemView.occupationLabel
 

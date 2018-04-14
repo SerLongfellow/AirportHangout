@@ -24,6 +24,7 @@ class CandidateListAdapter(candidateListProvider: CandidateListProvider) : Recyc
     override fun onBindViewHolder(holder: CandidateLineViewHolder, position: Int) {
         val candidate = candidates[position]
         holder.profilePictureImageView.setImageBitmap(candidate.profileImage)
+        holder.nameLabel.text = candidate.name
         holder.occupationLabel.text = candidate.occupation
         holder.originLocationLabel.text = candidate.originLocation
     }
