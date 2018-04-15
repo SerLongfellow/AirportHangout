@@ -3,18 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:clickable="true">
 
     <ImageView
         android:id="@+id/profilePictureImageView"
-        android:layout_width="@dimen/profile_photo_size"
-        android:layout_height="@dimen/profile_photo_size"
+        android:layout_width="@dimen/size_list_profile_photo"
+        android:layout_height="@dimen/size_list_profile_photo"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:width="@dimen/profile_photo_size"
-        android:height="@dimen/profile_photo_size"
+        android:width="@dimen/size_list_profile_photo"
+        android:height="@dimen/size_list_profile_photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

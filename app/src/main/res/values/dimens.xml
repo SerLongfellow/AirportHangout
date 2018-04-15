@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="profile_photo_size">64dip</dimen>
+    <dimen name="size_list_profile_photo">64dip</dimen>
+    <dimen name="size_detail_profile_photo">128dip</dimen>
 </resources>

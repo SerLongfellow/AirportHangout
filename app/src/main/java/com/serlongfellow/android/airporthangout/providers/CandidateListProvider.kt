@@ -1,7 +1,7 @@
 package com.serlongfellow.android.airporthangout.providers
 
-import com.serlongfellow.android.airporthangout.models.CandidateModel
+import com.serlongfellow.android.airporthangout.models.CandidateListModel
 
 interface CandidateListProvider {
-    fun fetchCandidateList() : List<CandidateModel>
+    fun fetchCandidateList() : List<CandidateListModel>
 }
