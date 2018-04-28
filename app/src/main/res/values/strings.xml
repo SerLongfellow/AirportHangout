@@ -3,6 +3,10 @@
     <string name="default_name">Dave S.</string>
     <string name="default_location">Unknown, USA</string>
     <string name="default_occupation">Dr. Feelgood</string>
-    <string name="candidate_detail_hangout_button">Hangout</string>
+
+    <string name="candidate_detail_hangout_button">Message</string>
     <string name="candidate_detail_interest_label">Interests</string>
+
+    <string name="chat_hangout_new_message_hint">Type message&#8230;</string>
+    <string name="chat_hangout_send_button">Send</string>
 </resources>
