@@ -20,7 +20,7 @@ class CandidateDetailActivity : AppCompatActivity() {
         val candidateId = intent.extras.getInt(INTENT_EXTRA_CANDIDATE_ID)
 
         val detailProvider = SimpleCandidateDetailProvider()
-        var candidate = detailProvider.getCandidateDetails(candidateId)
+        val candidate = detailProvider.getCandidateDetails(candidateId)
 
         setViewFields(candidate)
     }
