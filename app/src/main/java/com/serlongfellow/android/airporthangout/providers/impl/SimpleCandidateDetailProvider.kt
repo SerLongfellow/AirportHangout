@@ -18,7 +18,9 @@ class SimpleCandidateDetailProvider : CandidateDetailProvider {
                          "Bubba J.",
                          "Little Rock, AR, USA",
                          "Methamphetamine Connoisseur",
-                         profilePhoto)
+                         profilePhoto,
+                         listOf("Sudafed", "Bunsen Burners", "Bud Light")
+                )
 
 
         profilePhoto = BitmapFactory.decodeResource(BaseApplication.instance.resources, R.drawable.seattle_candidate)
@@ -28,7 +30,9 @@ class SimpleCandidateDetailProvider : CandidateDetailProvider {
                          "Kurt C.",
                          "Seattle, WA, USA",
                          "Rehabilitation Therapist",
-                         profilePhoto)
+                         profilePhoto,
+                         listOf("Espresso", "IPA Beer")
+                )
 
     }
 

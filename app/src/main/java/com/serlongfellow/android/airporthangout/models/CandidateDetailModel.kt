@@ -6,6 +6,7 @@ class CandidateDetailModel(val id : Int,
                            val name : String,
                            val originLocation : String,
                            val occupation : String,
-                           val profileImage : Bitmap) {
+                           val profileImage : Bitmap,
+                           val interests: List<String>) {
     // empty
 }

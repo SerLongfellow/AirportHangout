@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setupRecycler()
     }
 
-    fun setupRecycler() {
+    private fun setupRecycler() {
         linearLayoutManager = LinearLayoutManager(this)
         candidateListAdapter = CandidateListAdapter(SimpleCandidateListProvider())
 

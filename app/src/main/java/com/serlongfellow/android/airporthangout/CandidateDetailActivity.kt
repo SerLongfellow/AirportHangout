@@ -3,6 +3,7 @@ package com.serlongfellow.android.airporthangout
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.widget.TextView
 import com.serlongfellow.android.airporthangout.models.CandidateDetailModel
 import com.serlongfellow.android.airporthangout.providers.CandidateDetailProvider
 import com.serlongfellow.android.airporthangout.providers.impl.SimpleCandidateDetailProvider
@@ -25,10 +26,21 @@ class CandidateDetailActivity : AppCompatActivity() {
         setViewFields(candidate)
     }
 
-    private fun setViewFields(candidate : CandidateDetailModel) {
+    private fun setViewFields(candidate: CandidateDetailModel) {
         profilePictureImageView.setImageBitmap(candidate.profileImage)
         nameTextView.text = candidate.name
         originLocationTextView.text = candidate.originLocation
         occupationTextView.text = candidate.occupation
+        addCandidateInterestsToView(candidate.interests)
+
+    }
+
+    private fun addCandidateInterestsToView(interests: List<String>) {
+        for (interest in interests) {
+            val interestTextView = TextView(this)
+            interestTextView.text = interest
+
+            interestsListLinearLayout.addView(interestTextView)
+        }
     }
 }
